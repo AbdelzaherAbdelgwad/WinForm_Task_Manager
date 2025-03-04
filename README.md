@@ -73,7 +73,7 @@ public class Category
 ## Installation & Setup
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/task-management-system.git
+   git clone https://github.com/AbdelzaherAbdelgwad/WinForm_Task_Manager.git
    ```
 2. **Navigate to the project directory:**
    ```sh
@@ -90,13 +90,5 @@ public class Category
    dotnet run
    ```
 
-## Contribution
-Contributions are welcome! If you find any issues or have feature suggestions, please open an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-Made with ❤️ by [Your Name](https://github.com/your-username)
 
