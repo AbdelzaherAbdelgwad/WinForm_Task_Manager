@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             label3 = new Label();
             PasswordTextBox = new TextBox();
             RegisterButton = new Button();
@@ -39,7 +40,11 @@
             ConfirmPasswordTextBox = new TextBox();
             groupBox1 = new GroupBox();
             label5 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -131,6 +136,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = SystemColors.GradientInactiveCaption;
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(ConfirmPasswordTextBox);
@@ -150,23 +156,49 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(18, -5);
+            label5.Font = new Font("Simplified Arabic Fixed", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(17, -5);
             label5.Name = "label5";
-            label5.Size = new Size(133, 25);
+            label5.Size = new Size(236, 33);
             label5.TabIndex = 19;
             label5.Text = "Register form";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(340, 183);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(157, 121);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 5);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(77, 69);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 20;
+            pictureBox2.TabStop = false;
             // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(474, 306);
             Controls.Add(groupBox1);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox2);
             Name = "RegisterForm";
             Text = "RegisterForm";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -183,5 +215,7 @@
         private TextBox ConfirmPasswordTextBox;
         private GroupBox groupBox1;
         private Label label5;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

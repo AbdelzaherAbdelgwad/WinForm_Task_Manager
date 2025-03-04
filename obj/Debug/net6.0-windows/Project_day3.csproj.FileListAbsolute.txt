@@ -71,3 +71,4 @@ F:\Collage\ITI\13-Entity\Project_day3\Project_day3\bin\Debug\net6.0-windows\Live
 F:\Collage\ITI\13-Entity\Project_day3\Project_day3\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 F:\Collage\ITI\13-Entity\Project_day3\Project_day3\bin\Debug\net6.0-windows\LiveCharts.dll
 F:\Collage\ITI\13-Entity\Project_day3\Project_day3\obj\Debug\net6.0-windows\Project_day3.ReportsForm.resources
+F:\Collage\ITI\13-Entity\Project_day3\Project_day3\obj\Debug\net6.0-windows\Project_day3.sourcelink.json

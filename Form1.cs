@@ -72,7 +72,6 @@ namespace Project_day3
         public Form1(int UserId, string? Username)
         {
             InitializeComponent();
-
             this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
             this.ControlBox = false;
 
@@ -90,13 +89,15 @@ namespace Project_day3
             if (currentPage * pageSize < CurrentShownData.Count)
             {
                 NextPageButton.Enabled = true;
-            };
+            }
+            ;
 
         }
 
         private void CreateTaskButton_Click(object sender, EventArgs e)
         {
             dataAssign();
+            taskItem.Id = 0;
             db.TaskItems.Add(taskItem);
             db.SaveChanges();
             FetchData(currentPage);
@@ -312,7 +313,7 @@ namespace Project_day3
 
         private void GenerateReport()
         {
-           
+
             var report = new
             {
                 TotalTasks = AlltasksData.Count,
@@ -347,10 +348,6 @@ namespace Project_day3
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-       
+  
     }
 }

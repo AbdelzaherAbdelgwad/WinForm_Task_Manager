@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
 namespace Project_day3.CustomControls
 {
     public partial class CustomButton : Button
@@ -9,10 +8,11 @@ namespace Project_day3.CustomControls
         public CustomButton()
         {
             this.FlatStyle = FlatStyle.Flat;
-            this.BackColor = Color.Gray;
+            this.BackColor = Color.Transparent;
             this.ForeColor = Color.Black;
             this.Font = new Font("Arial", 10, FontStyle.Bold);
             this.FlatAppearance.BorderSize = 0;
+      
             InitializeComponent();
         }
 
@@ -29,7 +29,7 @@ namespace Project_day3.CustomControls
         {
             base.OnMouseLeave(e);
             // Revert to original color when the mouse leaves
-            this.BackColor = Color.Gray;
+            this.BackColor = Color.Transparent;
             this.ForeColor = Color.Black;
 
         }

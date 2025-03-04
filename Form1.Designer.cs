@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             SearchBarTextBox = new TextBox();
@@ -45,6 +46,7 @@
             label6 = new Label();
             label7 = new Label();
             groupBox1 = new GroupBox();
+            pictureBox5 = new PictureBox();
             DueDatePicker = new Project_day3.CustomControls.CustomDatePicker();
             CancelButton = new Button();
             EditButton = new Button();
@@ -55,13 +57,30 @@
             label2 = new Label();
             SortByComboBox = new ComboBox();
             notifyIcon1 = new NotifyIcon(components);
-            ReportButton = new Button();
             NextPageButton = new Project_day3.CustomControls.CustomButton();
             PreviousPageButton = new Project_day3.CustomControls.CustomButton();
             dataGridView1 = new Project_day3.CustomControls.CustomGridView();
             LogoutButton = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            groupBox2 = new GroupBox();
+            label9 = new Label();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // SearchBarTextBox
@@ -101,10 +120,10 @@
             // CreateOrEditLabel
             // 
             CreateOrEditLabel.AutoSize = true;
-            CreateOrEditLabel.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            CreateOrEditLabel.Location = new Point(85, -4);
+            CreateOrEditLabel.Font = new Font("Simplified Arabic Fixed", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            CreateOrEditLabel.Location = new Point(35, -5);
             CreateOrEditLabel.Name = "CreateOrEditLabel";
-            CreateOrEditLabel.Size = new Size(168, 25);
+            CreateOrEditLabel.Size = new Size(270, 33);
             CreateOrEditLabel.TabIndex = 4;
             CreateOrEditLabel.Text = "Create New Task";
             // 
@@ -202,6 +221,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.GradientInactiveCaption;
+            groupBox1.Controls.Add(pictureBox5);
             groupBox1.Controls.Add(DueDatePicker);
             groupBox1.Controls.Add(CancelButton);
             groupBox1.Controls.Add(EditButton);
@@ -224,6 +244,16 @@
             groupBox1.TabIndex = 15;
             groupBox1.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(-18, 410);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(100, 50);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 30;
+            pictureBox5.TabStop = false;
+            // 
             // DueDatePicker
             // 
             DueDatePicker.CalendarMonthBackground = SystemColors.Menu;
@@ -235,6 +265,7 @@
             // CancelButton
             // 
             CancelButton.BackColor = Color.Red;
+            CancelButton.Cursor = Cursors.Hand;
             CancelButton.Enabled = false;
             CancelButton.FlatStyle = FlatStyle.Popup;
             CancelButton.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
@@ -250,6 +281,7 @@
             // EditButton
             // 
             EditButton.BackColor = Color.LightGray;
+            EditButton.Cursor = Cursors.Hand;
             EditButton.Enabled = false;
             EditButton.FlatStyle = FlatStyle.Popup;
             EditButton.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
@@ -285,6 +317,7 @@
             // CreateTaskButton
             // 
             CreateTaskButton.BackColor = Color.LightGray;
+            CreateTaskButton.Cursor = Cursors.Hand;
             CreateTaskButton.FlatStyle = FlatStyle.Popup;
             CreateTaskButton.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             CreateTaskButton.Location = new Point(105, 373);
@@ -335,31 +368,19 @@
             notifyIcon1.Text = "notifyIcon1";
             notifyIcon1.Visible = true;
             // 
-            // ReportButton
-            // 
-            ReportButton.BackColor = Color.LightGray;
-            ReportButton.FlatStyle = FlatStyle.Popup;
-            ReportButton.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            ReportButton.Location = new Point(577, 266);
-            ReportButton.Name = "ReportButton";
-            ReportButton.Size = new Size(75, 23);
-            ReportButton.TabIndex = 22;
-            ReportButton.Text = "Report";
-            ReportButton.UseVisualStyleBackColor = false;
-            ReportButton.Click += ReportButton_Click;
-            // 
             // NextPageButton
             // 
-            NextPageButton.BackColor = Color.Gray;
+            NextPageButton.BackColor = Color.Transparent;
             NextPageButton.Cursor = Cursors.Hand;
             NextPageButton.Enabled = false;
             NextPageButton.FlatAppearance.BorderSize = 0;
             NextPageButton.FlatStyle = FlatStyle.Popup;
             NextPageButton.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point);
             NextPageButton.ForeColor = Color.Black;
+            NextPageButton.ImageAlign = ContentAlignment.MiddleRight;
             NextPageButton.Location = new Point(332, 266);
             NextPageButton.Name = "NextPageButton";
-            NextPageButton.Size = new Size(88, 25);
+            NextPageButton.Size = new Size(88, 33);
             NextPageButton.TabIndex = 23;
             NextPageButton.Text = "Next";
             NextPageButton.UseVisualStyleBackColor = false;
@@ -367,16 +388,17 @@
             // 
             // PreviousPageButton
             // 
-            PreviousPageButton.BackColor = Color.Gray;
+            PreviousPageButton.BackColor = Color.Transparent;
+            PreviousPageButton.BackgroundImage = (Image)resources.GetObject("PreviousPageButton.BackgroundImage");
             PreviousPageButton.Cursor = Cursors.Hand;
             PreviousPageButton.Enabled = false;
             PreviousPageButton.FlatAppearance.BorderSize = 0;
             PreviousPageButton.FlatStyle = FlatStyle.Popup;
             PreviousPageButton.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point);
             PreviousPageButton.ForeColor = Color.Black;
-            PreviousPageButton.Location = new Point(238, 266);
+            PreviousPageButton.Location = new Point(234, 266);
             PreviousPageButton.Name = "PreviousPageButton";
-            PreviousPageButton.Size = new Size(88, 25);
+            PreviousPageButton.Size = new Size(92, 33);
             PreviousPageButton.TabIndex = 24;
             PreviousPageButton.Text = "Previous";
             PreviousPageButton.UseVisualStyleBackColor = false;
@@ -421,6 +443,102 @@
             LogoutButton.UseVisualStyleBackColor = false;
             LogoutButton.Click += LogoutButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(215, 262);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(31, 41);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(205, 265);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(16, 36);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 28;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.None;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(407, 262);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(31, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 27;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(431, 265);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(16, 36);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 29;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(995, 389);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(75, 137);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 30;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(692, -7);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(77, 69);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 31;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Cursor = Cursors.Hand;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(6, 43);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(44, 46);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 32;
+            pictureBox8.TabStop = false;
+            pictureBox8.Click += ReportButton_Click;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(pictureBox8);
+            groupBox2.Cursor = Cursors.Hand;
+            groupBox2.Location = new Point(94, 393);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(58, 95);
+            groupBox2.TabIndex = 33;
+            groupBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Cursor = Cursors.Hand;
+            label9.Font = new Font("Segoe Print", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(90, 406);
+            label9.Name = "label9";
+            label9.Size = new Size(64, 26);
+            label9.TabIndex = 34;
+            label9.Text = "Report";
+            label9.Click += ReportButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -428,11 +546,14 @@
             BackColor = SystemColors.ActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1063, 491);
+            Controls.Add(label9);
+            Controls.Add(groupBox2);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
             Controls.Add(LogoutButton);
             Controls.Add(dataGridView1);
             Controls.Add(PreviousPageButton);
             Controls.Add(NextPageButton);
-            Controls.Add(ReportButton);
             Controls.Add(label2);
             Controls.Add(SortByComboBox);
             Controls.Add(UsernameLabel);
@@ -440,13 +561,25 @@
             Controls.Add(label1);
             Controls.Add(FilterComboBox);
             Controls.Add(SearchBarTextBox);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
             DoubleBuffered = true;
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            groupBox2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
 
@@ -480,12 +613,21 @@
         //private Button PreviousPageButton;
         //private Button NextPageButton;
         private NotifyIcon notifyIcon1;
-        private Button ReportButton;
         private CustomControls.CustomDatePicker DueDatePicker;
         private CustomControls.CustomButton customButton1;
         private CustomControls.CustomButton NextPageButton;
         private CustomControls.CustomButton PreviousPageButton;
         private CustomControls.CustomGridView dataGridView1;
         private Button LogoutButton;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private GroupBox groupBox2;
+        private Label label9;
     }
 }

@@ -26,7 +26,7 @@ namespace Project_day3
             string Password = PasswordTextBox.Text;
             string ConfirmPassword = ConfirmPasswordTextBox.Text;
 
-            var user = taskManagementContextDb.Users.Where(u => u.Email == Email && u.Name == Name).FirstOrDefault();
+            var user = taskManagementContextDb.Users.Where(u => u.Email == Email || u.Name == Name).FirstOrDefault();
             if (user == null) 
             {
                 if(ConfirmPassword != Password)
